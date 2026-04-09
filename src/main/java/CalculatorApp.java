@@ -19,6 +19,7 @@ public class CalculatorApp {
         System.out.println("  (M)ultiply");
         System.out.println("  (D)ivide");
         System.out.println("Please select and option: ");
+        scanner.nextLine();
 
         String choice = scanner.nextLine();
 
