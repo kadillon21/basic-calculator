@@ -23,7 +23,40 @@ public class CalculatorApp {
 
         String choice = scanner.nextLine();
 
-        System.out.println(x + " * " + y + " = " + (x * y));
+        int solution;
+
+
+        // Exercise 4 Answer
+        // System.out.println(x + " * " + y + " = " + (x * y));
+
+        // Extra work with if statements
+
+        if (choice.equalsIgnoreCase("A")){
+
+            solution = x + y;
+            System.out.println(x + " + " + y + " = " + solution);
+
+        } else if (choice.equalsIgnoreCase("S")) {
+
+            solution = x - y;
+            System.out.println(x + " - " + y + " = " + solution);
+
+        } else if (choice.equalsIgnoreCase("M")){
+
+            solution = x * y;
+            System.out.println(x + " / " + y + " = " + solution);
+
+        } else if (choice.equalsIgnoreCase("D")){
+
+            solution = x / y;
+            System.out.println(x + " * " + y + " = " + solution);
+
+        } else {
+
+            System.out.println("Sorry, the program was unable to read your choice, please run the program again and enter either 'A', 'S', 'M', or 'D'");
+
+
+        }
     }
 
 
